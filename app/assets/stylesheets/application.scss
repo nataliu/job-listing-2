@@ -17,3 +17,31 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'font-awesome';
+
+.jumbotron {
+  background-image:url('http://a3.qpic.cn/psb?/f5d6bd92-5c7e-444c-af71-54e734708dcd/1rzzOpoh6ab2qNlncCBRpaIPu0P5Eqkl9QmC3VA4FTU!/b/dN0AAAAAAAAA&bo=CAcaBAgHGgQFCSo!&rf=viewer_4');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 110px;
+}
+
+.title {
+  font-family: "Helvetica Neue", "Microsoft Yahei", 微软雅黑;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.slogan {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: white;
+  top: 12px;
+}
+
+.lead {
+  margin-bottom: 60px;
+  text-align: center;
+  color: white;
+}

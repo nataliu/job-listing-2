@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
 
+
+  resources :welcome do
+  end
+
   resources :jobs do
     resources :resumes
   end
@@ -14,5 +18,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root 'jobs#index'
+  root 'welcome#index'
 end
