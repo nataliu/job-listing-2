@@ -65,21 +65,22 @@
 
 /* 下面是-“晚了！快跟上，已经有10w人”----------------------------------------------- */
 .innerjumbotron {
-  background-color: rgba(92,99,117,0.5);
+  background-color: #232732;
   font-family: "calibri", 微软雅黑;
   text-align: center;
   color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   font-size: 21px;
 }
 
-/* -三个框头像的部分----------------------------------------------- */
+/* -首页三个框头像的部分----------------------------------------------- */
 .box{
-  background-color: rgb(245,245,245);
-  padding-top: 50px;
-  margin-top: 20px;
-  margin-color: rgb(245,245,245);
+  // background-image:url('https://ww2.sinaimg.cn/large/006tKfTcgy1fbyfchobnkj31e00t640n.jpg');
+  background-color: #232732;
+  height: 200%;
+  margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 
@@ -97,7 +98,7 @@
 }
 /*这几行有一行是定义头像位置的，但我不知道是哪一行。。。 */
 
-/* 下面我定义三个框加的内容----文本内容---------------------------------------------- */
+/* 三个框加的内容----文本内容---------------------------------------------- */
 
 .caption {
   padding: 9px;
@@ -125,9 +126,32 @@
   font-size: 1em;
 }
 
+.btn-success {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+// 加入我们。跟我们一起上路--这是鼠标移动到那里的时候的变化
 .btn-success:hover{
+  font-family: "calibri", 微软雅黑;
+  font-size: 25px;
   color: #ffffff;
-  background-color: #51a351;
+  background-color: #51a351; //就是那个绿色
+}
+
+.btn-su{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 12px;
+  font-color: white;
+  background-color: rgb(245,245,245);
+}
+
+.btn-su:hover{
+  font-family: "calibri", 微软雅黑;
+  font-size: 18px ;
+  color: #ffffff;
+  background-color: #51a351; //就是那个绿色
 }
 
 
@@ -145,9 +169,225 @@
   color: white;
 }
 
-/* jobs page-------------------------------------------------- */
+/* jobs index page----------------------------------------------------------------------- */
+
+/*--------------------------------------------------
+    [Gutter]
+----------------------------------------------------*/
+
+.content-sm {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-color: white;
+  font-family: "calibri", 微软雅黑;
+}
+
+.content-md {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
 
 
+@media (max-width: 992px) {
+  .md-margin-b-30 {
+    margin-bottom: 30px !important;
+  }
+}
+
+
+/*--------------------------------------------------
+    [Radius]
+----------------------------------------------------*/
+
+.radius-3 {
+  border-radius: 3px !important;
+}
+
+.radius-10 {
+  border-radius: 10px !important;
+}
+
+
+/*--------------------------------------------------
+    [Colors]
+----------------------------------------------------*/
+
+.bg-color-sky-light {
+  background: #f7f8fa !important;
+}
+
+
+/*--------------------------------------------------
+    [Button]
+----------------------------------------------------*/
+
+.btn-dark-brd {
+  position: relative;
+  display: inline-block;
+  line-height: 1.4;
+  color: #34343c;
+  text-align: center;
+  background: transparent;
+  background-image: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #34343c;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-dark-brd:focus, .btn-dark-brd:active:focus, .btn-dark-brd.active:focus, .btn-dark-brd.focus, .btn-dark-brd:active.focus, .btn-dark-brd.active.focus {
+  outline: none;
+}
+
+.btn-dark-brd:hover {
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.btn-dark-brd:hover, .btn-dark-brd:focus, .btn-dark-brd.focus {
+  color: #fff;
+  background: #34343c;
+  border-color: #34343c;
+  text-decoration: none;
+}
+
+.btn-dark-brd:after, .btn-dark-brd:before {
+  background: transparent;
+}
+
+.btn-dark-brd:active, .btn-dark-brd.active {
+  background-image: none;
+  outline: 0;
+}
+
+.btn-dark-brd.disabled, .btn-dark-brd[disabled],
+fieldset[disabled] .btn-dark-brd {
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+  pointer-events: none;
+}
+
+.btn-dark-brd .btn-base-element-xs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 6px 9px;
+}
+
+.btn-dark-brd .btn-base-element-sm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 9px 11px;
+}
+
+.btn-dark-brd .btn-base-element-md {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 12px 13px;
+}
+
+.btn-dark-brd .btn-base-element-lg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border-left: 1px solid #2b2b31;
+  padding: 15px 15px;
+}
+
+.btn-base-sm { // 寻找相似工作这几个字字体和边框的距离
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 10px; // 寻找相似工作这几个字字体和边框的距离
+  margin-top: 20px; // 寻找相似工作这几个字外边距
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+
+/*--------------------------------------------------
+    [Pricing List v4]
+----------------------------------------------------*/
+.pricing-list-v4 {
+  text-align: center;
+  background: #fff;
+  box-shadow: 15px 15px 15px 0 #eff1f8;
+}
+
+.pricing-list-v4 .pricing-list-v4-header {
+  border-bottom: 1px solid #e4e8f3;
+  padding: 40px 20px 40px;
+  margin: 10px 10px;
+}
+
+.pricing-list-v4 .pricing-list-v4-header .pricing-list-v4-title {
+  font-size: 20px; // 三个岗位字体大小
+  margin-bottom: 5px;
+}
+
+.pricing-list-v4 .pricing-list-v4-header .pricing-list-v4-subtitle {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing-list-v4 .pricing-list-v4-content {
+  padding: 5px 5px; // 缩进7000和情非得已之间的距离
+}
+
+
+.pricing-list-v4 .pricing-list-v4-content .pricing-list-v4-price {
+  font-size: 40px;// 薪资数字大小
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.pricing-list-v4 .pricing-list-v4-content .pricing-list-v4-subprice {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.pricing-list-v4 .pricing-list-v4-content .pricing-list-v4-price-info {
+  position: relative;
+  display: block;
+  letter-spacing: 1px;
+}
+
+
+/* 我们的期许 -------------------------------------------------- */
+
+.job-content .job-content1 {
+  font-size: 10px;
+  font-weight: 300;
+} // 我们的期许
+
+.job-content .job-content2 {
+  font-size: 5px;
+  font-weight: 300;
+} // 我们的期许2
+
+.margin-b-10 {
+    margin-bottom: 10px !important;
+}
 
 /* sign up styles
 -------------------------------------------------- */
@@ -352,6 +592,7 @@ form.login a:hover
     text-align: center;
     margin-left: auto; // 使在页面水平居中
     margin-right: auto; // 使在页面水平居中
+    margin-bottom: 100px;
 }
 
 
