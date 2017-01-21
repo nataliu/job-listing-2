@@ -21,14 +21,36 @@
 
 /* Navbar styles
 -------------------------------------------------- */
+/* http://forum.qzy.camp/t/topic/420  */
+.navbar.default {
+  background-color: red;
+  border-color: rgba(92,99,117,0.5);
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+   color: #EF6C00;//字体颜色
+   padding: 10px 15px;//上下10px,左右15px
+   line-height: 30px;//文字行高
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FF6F00;//鼠标放置在链接上的文字颜色
+  background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
+}
+
 /* 李笑来首页图片  */
 .jumbotron {
   background-image:url('http://a3.qpic.cn/psb?/f5d6bd92-5c7e-444c-af71-54e734708dcd/1rzzOpoh6ab2qNlncCBRpaIPu0P5Eqkl9QmC3VA4FTU!/b/dN0AAAAAAAAA&bo=CAcaBAgHGgQFCSo!&rf=viewer_4');
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
-  height: 90%;
+  height: 200%;
+  border-radius: 0;//圆角为0
+  margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+  padding-bottom: 0px;//内部的底部边距，这样按钮不会很靠近底部了
 }
+
 
 /* 首页 - “实现财富自由”那一句  */
 .jumbotron .title {
@@ -36,7 +58,7 @@
   color: white;
   text-align: right;
   margin-top: 250px;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
   padding-right: 100px;
   font-size: 3em;
 }
@@ -52,11 +74,11 @@
   font-size: 21px;
 }
 
-
 /* -三个框头像的部分----------------------------------------------- */
 .box{
   background-color: rgb(245,245,245);
   padding-top: 50px;
+  margin-top: 20px;
   margin-color: rgb(245,245,245);
 }
 
@@ -122,6 +144,218 @@
   text-align: right;
   color: white;
 }
+
+/* jobs page-------------------------------------------------- */
+
+
+
+/* sign up styles
+-------------------------------------------------- */
+body
+{
+    // background-image:url('https://ww4.sinaimg.cn/large/006tKfTcgy1fby9z0o6foj31e00t6di4.jpg');//
+    background-color: #232732;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+// Sign In
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding-top: 100px;
+    margin-left: auto; // 使在页面水平居中
+    margin-right: auto; // 使在页面水平居中
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+// Sign In
+
+p.form-title
+{
+    font-family: 'calibri' ;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form
+{
+    width: 250px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+// remember me & forgot-pass
+
+form.login .remember-forgot
+{
+    font-family: 'calibri' ;
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+form.login .forgot-pass-content
+{
+    font-family: 'calibri' ;
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form.login label, form.login a
+{
+    font-family: 'calibri' ;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+form.login a
+{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover
+{
+    color: #2ecc71;
+}
+
+.pr-wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+.show-pass-reset
+{
+    display: block !important;
+}
+
+.pass-reset
+{
+    font-family: 'calibri' ;
+    margin: 0 auto;
+    width: 250px;
+    position: relative;
+    margin-top: 22%;
+    z-index: 999;
+    background: #FFFFFF;
+    padding: 20px 15px;
+}
+
+.pass-reset label
+{
+    font-family: 'calibri' ;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pass-reset input[type="email"]
+{
+    font-family: 'calibri' ;
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000000;
+    outline: 0;
+}
+
+.pass-reset input[type="submit"]
+{
+    font-family: 'calibri' ;
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+.powered-by
+{
+    font-family: 'calibri' ;
+    position: relative;
+    bottom: 50px;
+    color: white;
+    padding: 280px;
+    text-align: center;
+    margin-left: auto; // 使在页面水平居中
+    margin-right: auto; // 使在页面水平居中
+}
+
+
+
 
 
 /* Footer styles

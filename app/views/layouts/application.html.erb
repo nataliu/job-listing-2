@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JobListing</title>
+    <title>PM DOG</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,10 @@
   </head>
 
   <body>
-    <%= render 'common/navbar'%>
+    <div class="row">
+       <%= render "common/navbar" %>
+    </div>
+
     <%= render 'common/flashes'%>
     <%= yield %>
 
