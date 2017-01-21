@@ -582,8 +582,7 @@ form.login a:hover
     transition: background-color 0.5s ease;
 }
 
-.powered-by
-{
+.powered-by{
     font-family: 'calibri' ;
     position: relative;
     bottom: 50px;
@@ -595,7 +594,17 @@ form.login a:hover
     margin-bottom: 100px;
 }
 
-
+.powered-by-footer{
+    font-family: 'calibri' ;
+    position: relative;
+    bottom: 1px;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    margin-left: auto; // 使在页面水平居中
+    margin-right: auto; // 使在页面水平居中
+    margin-bottom: 0px;
+}
 
 
 
