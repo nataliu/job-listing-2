@@ -9,6 +9,12 @@ Rails.application.routes.draw do
     resources :resumes
   end
 
+  resources :jobs do
+    collection do
+      get :search
+    end
+  end
+
   namespace :admin do
     resources :jobs do
       member do
